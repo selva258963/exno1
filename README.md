@@ -1,7 +1,5 @@
 # EX NO : 1
 
-#####                                                                                    Data Cleaning Process
-
 # AIM
 To read the given data and perform data cleaning and save the cleaned data to a file.
 
@@ -22,6 +20,10 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 
 # Coding and Output
+
+##                                                                                  Data Cleaning Process
+
+
 ```
 import pandas as pd
 x=pd.read_csv("/content/SAMPLEIDS.csv")
@@ -55,6 +57,9 @@ df.isnull().sum()
 y.fillna(method='ffill')
 ```
 ![image](https://github.com/user-attachments/assets/6a5bfb7c-a468-4765-a11e-1acaba53e892)
+
+## IQR(Inter Quartile Range)
+
 ```
 import pandas as pd
 import seaborn as sns
@@ -87,6 +92,9 @@ delid
 sns.boxplot(x='sepal_width',data=delid)
 ```
 ![image](https://github.com/user-attachments/assets/d3132c26-739e-43fc-86cf-996369c7177e)
+
+## Z-SCORE
+
 ```
 import matplotlib.pyplot as plt
 import pandas as pd
